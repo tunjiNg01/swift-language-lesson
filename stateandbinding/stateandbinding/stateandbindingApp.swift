@@ -10,8 +10,6 @@ import SwiftUI
 @main
 struct stateandbindingApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+          CustomScene()
     }
 }
