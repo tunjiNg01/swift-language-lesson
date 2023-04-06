@@ -7,21 +7,42 @@
 
 import Foundation
 
+fileprivate let relativeDateFormatter = RelativeDateTimeFormatter()
+
 struct Article {
+    let id = UUID()
     let source: Source
-    let title: String?
-    let description: String?
     let url: String
-    let urlToImage: String?
+    let title: String
     let publishedAt: Date
     
-    var titleText: String {
-        title ?? ""
+    
+    
+    let urlToImage: String?
+    let description: String?
+    let author: String?
+    
+    enum CodingKeys: String, CodingKey {
+          case source
+          case title
+          case url
+          case publishedAt
+          case author
+          case description
+          case urlToImage
+      }
+    
+    var authorText: String {
+        author ?? ""
     }
     
     var descriptionText: String {
         description ?? ""
     }
+    
+    var captionText: String {
+         "\(source.name) ‧ \(relativeDateFormatter.localizedString(for: publishedAt, relativeTo: Date()))"
+     }
     
     var articleUrl: URL {
         URL(string: url)!
@@ -38,29 +59,27 @@ struct Article {
 }
 
 
-extension Article: Codable {
-    func encode(to encoder: Encoder) throws {
-        <#code#>
-    }
-}
+extension Article: Codable {}
 
 extension Article: Equatable {}
 
-extension Article: Identifiable{
-    var id: String { url }
-}
+extension Article: Identifiable{}
 
 extension Article {
-    static var previewDataUrl: [Article] {
-        let previewDataUrl = Bundle.main.url(forResource: "news", withExtension: "json")!
-        let data = try! Data(contentsOf: previewDataUrl)
-        let jsonDecoder = JSONDecoder()
-        jsonDecoder.dateDecodingStrategy = .iso8601
+    static var previewData: [Article] {
         
-        let apiResponse = try! jsonDecoder.decode(NewApiResponse.self, from: data)
-        return apiResponse.article ?? []
+            let previewDataURL = Bundle.main.url(forResource: "news", withExtension: "json")!
         
-    }
+            let data = try! Data(contentsOf: previewDataURL)
+            
+            let jsonDecoder = JSONDecoder()
+        
+            jsonDecoder.dateDecodingStrategy = .iso8601
+            
+        let apiResponse = try! jsonDecoder.decode(NewsApiResponse.self , from: data)
+        print(apiResponse)
+            return apiResponse.articles ?? []
+        }
 }
 
 
@@ -70,6 +89,4 @@ struct Source {
 }
 
 extension Source: Equatable {}
-extension Source: Identifiable {
-    var id: String { name }
-}
+extension Source: Codable {}
