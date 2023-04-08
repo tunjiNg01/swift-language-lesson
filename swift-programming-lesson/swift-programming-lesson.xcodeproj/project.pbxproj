@@ -13,6 +13,7 @@
 		5227692429C4A11400A59A04 /* Understanding String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227692329C4A11400A59A04 /* Understanding String.swift */; };
 		5227692629C4A34800A59A04 /* Control Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227692529C4A34800A59A04 /* Control Flow.swift */; };
 		526D882329DACB8E00E0F8E7 /* Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D882229DACB8E00E0F8E7 /* Initialization.swift */; };
+		529DF45329E02E4800432881 /* Basic Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF45229E02E4800432881 /* Basic Operator.swift */; };
 		52F6BE1229CA0D0000B5C8FB /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6BE1129CA0D0000B5C8FB /* Function.swift */; };
 		52F6BE1429CA5FB000B5C8FB /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6BE1329CA5FB000B5C8FB /* Closure.swift */; };
 		52F6BE1629CC667600B5C8FB /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6BE1529CC667600B5C8FB /* Enumeration.swift */; };
@@ -41,6 +42,7 @@
 		5227692329C4A11400A59A04 /* Understanding String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Understanding String.swift"; sourceTree = "<group>"; };
 		5227692529C4A34800A59A04 /* Control Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Control Flow.swift"; sourceTree = "<group>"; };
 		526D882229DACB8E00E0F8E7 /* Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialization.swift; sourceTree = "<group>"; };
+		529DF45229E02E4800432881 /* Basic Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic Operator.swift"; sourceTree = "<group>"; };
 		52F6BE1129CA0D0000B5C8FB /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		52F6BE1329CA5FB000B5C8FB /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		52F6BE1529CC667600B5C8FB /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				5227691F29C0844E00A59A04 /* Understanding-variable-and-types.swift */,
 				526D882229DACB8E00E0F8E7 /* Initialization.swift */,
 				5227692329C4A11400A59A04 /* Understanding String.swift */,
+				529DF45229E02E4800432881 /* Basic Operator.swift */,
 				5227692529C4A34800A59A04 /* Control Flow.swift */,
 				52F6BE1129CA0D0000B5C8FB /* Function.swift */,
 				52F6BE1329CA5FB000B5C8FB /* Closure.swift */,
@@ -162,6 +165,7 @@
 				52F6BE1829CC935B00B5C8FB /* Class and Structure.swift in Sources */,
 				52F6BE1229CA0D0000B5C8FB /* Function.swift in Sources */,
 				52F6BE1429CA5FB000B5C8FB /* Closure.swift in Sources */,
+				529DF45329E02E4800432881 /* Basic Operator.swift in Sources */,
 				5227692429C4A11400A59A04 /* Understanding String.swift in Sources */,
 				52F6BE1A29D0675900B5C8FB /* Methods.swift in Sources */,
 				5227692229C487ED00A59A04 /* Collections Type.swift in Sources */,

@@ -41,7 +41,7 @@ struct Article {
     }
     
     var captionText: String {
-         "\(source.name) ‧ \(relativeDateFormatter.localizedString(for: publishedAt, relativeTo: Date()))"
+         "\(source.name) ․ \(relativeDateFormatter.localizedString(for: publishedAt, relativeTo: Date()))"
      }
     
     var articleUrl: URL {
