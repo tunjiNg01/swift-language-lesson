@@ -21,6 +21,7 @@ struct ArticleListView: View {
             .listRowSeparator(.hidden)
             .listRowInsets(.init(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0  )))
         }
+        .edgesIgnoringSafeArea(.top)
         .listStyle(.plain)
         .sheet(item: $selectedArticle){
             SafariView(url: $0.articleUrl)
