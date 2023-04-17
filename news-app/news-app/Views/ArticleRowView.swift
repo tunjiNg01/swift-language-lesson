@@ -62,7 +62,7 @@ struct ArticleRowView: View {
                     }
                     .buttonStyle(.bordered)
                     Button {
-                        
+                        presentShareSheet(url: article.articleUrl)
                     } label: {
                         Image(systemName: "square.and.arrow.up")
                             .font(.body)
@@ -73,6 +73,15 @@ struct ArticleRowView: View {
             }
             .padding([.horizontal, .bottom])
         }
+    }
+}
+
+extension View {
+    func presentShareSheet(url: URL){
+        let uiActivityVC = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+        (UIApplication.shared.connectedScenes.first as? UIWindowScene)?
+            .keyWindow?
+            .rootViewController?.present(uiActivityVC, animated: true)
     }
 }
 
