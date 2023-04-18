@@ -32,9 +32,11 @@ struct NewsApi {
             let apiResponse = try jsonDecoder.decode(NewsApiResponse.self, from: data)
             
             if apiResponse.status == "ok"{
+                // print(apiResponse.articles!)
                 return apiResponse.articles ?? []
-            }else{ 
-                throw generateError(description: "an error occured")
+            }else{
+              
+                throw generateError(description: "\(apiResponse.message!)")
             }
         default:
             throw generateError(description: "A server error occurred")
@@ -46,7 +48,7 @@ struct NewsApi {
     }
     
     private func generateUrl(from category: Category) -> URL {
-        var url = "https://newsapi.org/v2/everything?"
+        var url = "https://newsapi.org/v2/top-headlines?"
         url += "apiKey=\(apiKey)"
         url += "&language=en"
         url += "&category=\(category.rawValue)"

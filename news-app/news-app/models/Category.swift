@@ -9,7 +9,7 @@ import Foundation
 
 
 enum Category: String, CaseIterable {
-    case generals
+    case general
     case business
     case technology
     case entertainment
@@ -18,7 +18,7 @@ enum Category: String, CaseIterable {
     case health
     
     var text: String {
-        if self == .generals {
+        if self == .general {
             return "Top Headlines"
         }else{
             return rawValue.capitalized

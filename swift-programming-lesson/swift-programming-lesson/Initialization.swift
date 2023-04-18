@@ -91,3 +91,17 @@ struct BookShelf {
         self.init(bookFive: BookFive(author:"Tunji"), bookFour: BookFour(author: "Tunde"))
     }
 }
+
+
+// Class inheritance and initialiazation
+
+// swift provides 2 forms of initializer for a class
+// Designated initializer
+// Convinience initializer: This is secondary and it can be used to create a different of a particular type
+// initializer inheritance
+
+
+
+
+// Failable initialization
+// init?()
