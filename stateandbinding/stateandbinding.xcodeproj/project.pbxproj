@@ -16,6 +16,13 @@
 		526D881629D5AF9200E0F8E7 /* stateandbindingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D881529D5AF9200E0F8E7 /* stateandbindingUITestsLaunchTests.swift */; };
 		52847BA629DD8163000867E7 /* CustomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52847BA529DD8163000867E7 /* CustomScene.swift */; };
 		52847BA829DD82AC000867E7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52847BA729DD82AC000867E7 /* SettingView.swift */; };
+		529DF46C29F0216100432881 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF46B29F0216100432881 /* Person.swift */; };
+		529DF46E29F0226600432881 /* BasicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF46D29F0226600432881 /* BasicListView.swift */; };
+		529DF47029F025A100432881 /* PersonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF46F29F025A100432881 /* PersonRowView.swift */; };
+		529DF47229F02AA700432881 /* NestedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47129F02AA700432881 /* NestedListView.swift */; };
+		529DF47429F06C2300432881 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47329F06C2300432881 /* Message.swift */; };
+		529DF47629F06DCD00432881 /* ListSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47529F06DCD00432881 /* ListSwipeView.swift */; };
+		529DF47829F06E9100432881 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47729F06E9100432881 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		526D881529D5AF9200E0F8E7 /* stateandbindingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stateandbindingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		52847BA529DD8163000867E7 /* CustomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScene.swift; sourceTree = "<group>"; };
 		52847BA729DD82AC000867E7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		529DF46B29F0216100432881 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		529DF46D29F0226600432881 /* BasicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicListView.swift; sourceTree = "<group>"; };
+		529DF46F29F025A100432881 /* PersonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowView.swift; sourceTree = "<group>"; };
+		529DF47129F02AA700432881 /* NestedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedListView.swift; sourceTree = "<group>"; };
+		529DF47329F06C2300432881 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		529DF47529F06DCD00432881 /* ListSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwipeView.swift; sourceTree = "<group>"; };
+		529DF47729F06E9100432881 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,8 @@
 		526D87F729D5AF8F00E0F8E7 /* stateandbinding */ = {
 			isa = PBXGroup;
 			children = (
+				529DF46A29F0212000432881 /* Models */,
+				529DF46929F0211400432881 /* Views */,
 				52847BA029DD7FCB000867E7 /* scenes */,
 				526D87F829D5AF8F00E0F8E7 /* stateandbindingApp.swift */,
 				526D87FA29D5AF8F00E0F8E7 /* ContentView.swift */,
@@ -139,6 +155,27 @@
 				52847BA529DD8163000867E7 /* CustomScene.swift */,
 			);
 			path = scenes;
+			sourceTree = "<group>";
+		};
+		529DF46929F0211400432881 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				529DF46D29F0226600432881 /* BasicListView.swift */,
+				529DF47529F06DCD00432881 /* ListSwipeView.swift */,
+				529DF47729F06E9100432881 /* MessageCell.swift */,
+				529DF46F29F025A100432881 /* PersonRowView.swift */,
+				529DF47129F02AA700432881 /* NestedListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		529DF46A29F0212000432881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				529DF46B29F0216100432881 /* Person.swift */,
+				529DF47329F06C2300432881 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529DF47829F06E9100432881 /* MessageCell.swift in Sources */,
+				529DF46C29F0216100432881 /* Person.swift in Sources */,
+				529DF47229F02AA700432881 /* NestedListView.swift in Sources */,
 				526D87FB29D5AF8F00E0F8E7 /* ContentView.swift in Sources */,
+				529DF47629F06DCD00432881 /* ListSwipeView.swift in Sources */,
+				529DF47429F06C2300432881 /* Message.swift in Sources */,
 				52847BA829DD82AC000867E7 /* SettingView.swift in Sources */,
 				526D87F929D5AF8F00E0F8E7 /* stateandbindingApp.swift in Sources */,
 				52847BA629DD8163000867E7 /* CustomScene.swift in Sources */,
+				529DF47029F025A100432881 /* PersonRowView.swift in Sources */,
+				529DF46E29F0226600432881 /* BasicListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
