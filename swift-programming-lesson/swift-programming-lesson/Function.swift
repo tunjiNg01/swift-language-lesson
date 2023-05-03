@@ -77,7 +77,7 @@ func greeter(for person: String) -> String {
 // Argument label and parameter name
 
 
-// Function with default parameter
+// Function with default parameter - DO NOT PRESENT
 func someFunction(name: String = "tunji"){
     
 }
