@@ -23,6 +23,7 @@
 		529DF47429F06C2300432881 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47329F06C2300432881 /* Message.swift */; };
 		529DF47629F06DCD00432881 /* ListSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47529F06DCD00432881 /* ListSwipeView.swift */; };
 		529DF47829F06E9100432881 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF47729F06E9100432881 /* MessageCell.swift */; };
+		52C0FA5E29FC1B1B00A02C36 /* LazoutViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C0FA5D29FC1B1B00A02C36 /* LazoutViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		529DF47329F06C2300432881 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		529DF47529F06DCD00432881 /* ListSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwipeView.swift; sourceTree = "<group>"; };
 		529DF47729F06E9100432881 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		52C0FA5D29FC1B1B00A02C36 /* LazoutViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazoutViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				529DF47729F06E9100432881 /* MessageCell.swift */,
 				529DF46F29F025A100432881 /* PersonRowView.swift */,
 				529DF47129F02AA700432881 /* NestedListView.swift */,
+				52C0FA5D29FC1B1B00A02C36 /* LazoutViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529DF47829F06E9100432881 /* MessageCell.swift in Sources */,
+				52C0FA5E29FC1B1B00A02C36 /* LazoutViews.swift in Sources */,
 				529DF46C29F0216100432881 /* Person.swift in Sources */,
 				529DF47229F02AA700432881 /* NestedListView.swift in Sources */,
 				526D87FB29D5AF8F00E0F8E7 /* ContentView.swift in Sources */,
