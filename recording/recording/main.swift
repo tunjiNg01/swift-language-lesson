@@ -7,47 +7,49 @@
 
 import Foundation
 
-var someDictionary: [Int: String] = [:]
-someDictionary[1] = "Apple"
-someDictionary[2] = "Banana"
-someDictionary[3] = "Orange"
-
-someDictionary.updateValue("Mango", forKey: 3)
-someDictionary.removeValue(forKey: 3)
-
-print(someDictionary)
-
-
-for (i, v) in someDictionary {
-    print("index: \(i), value: \(v)")
+func add( _ age: [Int]) -> Int {
+    var sum = 0
+    for x in age {
+        sum += x
+    }
+    
+    return sum
 }
 
-for k in someDictionary.values {
-    print(k)
+print(add([2,3,4,5]))
+
+
+func someFunction() -> (String, Int)? {
+   
+   ("Some string", 12)
 }
 
-let arrOfValues = [String](someDictionary.values)
-let arrOfKeys = [Int](someDictionary.keys)
-print(arrOfKeys)
+print(someFunction()!.0)
 
+func findSum(_ numbers: Double... ) -> Double {
+    var total: Double = 0
+    
+    for number in numbers {
+        total += number
+    }
+    
+    return total
+    
+}
 
+print(findSum(2,2,45,67,456))
 
+var x = 100
+var y = 6
 
+func swapValue(_ x: inout Int, y: inout Int){
+    let z = x
+    x = y
+    y = z
+}
 
+swapValue(&x, y: &y)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(x)
 
 

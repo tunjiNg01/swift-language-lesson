@@ -9,6 +9,7 @@ import Foundation
 
 
 // Closure: These are just the shorthand approach of writing an expression
+
 // Properties: Trailing closure
 //---- Infering parameter and return type from the context
 //---- Implicit from single expression.
@@ -21,29 +22,87 @@ import Foundation
 // Inferring From Context: The parameter and return type can be infer from the context
 
 // Implicit return
+/***
+
+// Generally closure syntax
+
+// { (<parameter>) -> Int in <Statement> }
+// start from the full definition and reduce streamline it down
+let animals = [2,4,6,1,9,0]
+let sortedAnimal = animals.sorted(by: { $0 > $1} )
+print(sortedAnimal)
 
 
-// Capturing value:
+// Trailing closure
 
-func addition(by number: Int) -> () -> Int {
-    var x = 0
-    func performAddition() -> Int {
-        x += number
-        return x
-    }
+let xh = animals.sorted { $0 > $1}
+
+func trailingFunction(name: String, process: () -> Void ) {
     
-    return performAddition
+}
+
+trailingFunction(name: "Doe") {
+    print("Hello world: \(name)")
+}
+
+let squareArray = animals.map {
+    num in num * num
+}
+
+print(squareArray.sorted())
+
+
+//value capturing
+func stringConcatenator(s1 : String) -> () -> String {
+    var fullText = ""
+    
+    func textGenerator() -> String {
+       fullText = fullText + " " + s1
+        return fullText
+    }
+    return textGenerator
+}
+
+let stringCon = stringConcatenator(s1: "Thomas")
+
+print(stringCon())
+print(stringCon())
+print(stringCon())
+print(stringCon())
+
+// closure are reference type
+
+let stringCon2 = stringCon
+print(stringCon2() + " " + "copy")
+
+// Escaping closure:
+var handler: [() -> Void] = []
+
+
+func escapingClosureFunc(completionHandler: @escaping () -> Void) {
+    
+    handler.append(completionHandler)
+    return
 }
 
 
-var addedTen = addition(by: 10)
-// addedTen()
+// autoclosure
+var customersInLine = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+print(customersInLine.count)
 
+let customerProvider = { customersInLine.remove(at: 0) }
+print(customersInLine.count)
 
-// Closure is an inference type
+func serve(customer customerProvider: () -> String) {
+    print("Now serving \(customerProvider())!")
+}
+print(customersInLine.count)
+serve(customer: { customersInLine.remove(at: 0) } )
 
-// Escaping closure: A closure is said to escape a function when the closur e is passed as an argument to the function,
-//--                 but is called after the function returns.
+func serve1(customer customerProvider: @autoclosure () -> String) {
+    print("Now serving \(customerProvider())!")
+}
+serve1(customer: customersInLine.remove(at: 0))
 
-
-// AutoClosure: 
+print(customersInLine.count)
+ */
