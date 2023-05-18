@@ -14,12 +14,20 @@ struct ContentView: View {
                 .tabItem{
                     Label("News", systemImage: "newspaper")
                 }
+            ArticleBookMarkTabView()
+                .tabItem{
+                    Label("Saved", systemImage: "bookmark")
+                }
+            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    @StateObject static var articlBookmarkViewModel = ArticleBookMarkViewModel()
     static var previews: some View {
         ContentView()
+            .environmentObject(articlBookmarkViewModel)
+        
     }
 }

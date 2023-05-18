@@ -77,7 +77,7 @@ extension Article {
             jsonDecoder.dateDecodingStrategy = .iso8601
             
         let apiResponse = try! jsonDecoder.decode(NewsApiResponse.self , from: data)
-        print(apiResponse)
+        // print(apiResponse)
             return apiResponse.articles ?? []
         }
 }

@@ -26,6 +26,8 @@
 		529DF46429EEFCA100432881 /* ArticleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF46329EEFCA100432881 /* ArticleTabView.swift */; };
 		529DF46629EF0CEB00432881 /* EmptyPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF46529EF0CEB00432881 /* EmptyPlaceHolderView.swift */; };
 		529DF46829EF0FFE00432881 /* RetryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529DF46729EF0FFE00432881 /* RetryView.swift */; };
+		52A9E89A2A163DA9006C2368 /* ArticleBookMarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9E8992A163DA9006C2368 /* ArticleBookMarkViewModel.swift */; };
+		52B67D802A1648470097EADE /* ArticleBookMarkTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B67D7F2A1648470097EADE /* ArticleBookMarkTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		529DF46329EEFCA100432881 /* ArticleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTabView.swift; sourceTree = "<group>"; };
 		529DF46529EF0CEB00432881 /* EmptyPlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPlaceHolderView.swift; sourceTree = "<group>"; };
 		529DF46729EF0FFE00432881 /* RetryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryView.swift; sourceTree = "<group>"; };
+		52A9E8992A163DA9006C2368 /* ArticleBookMarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleBookMarkViewModel.swift; sourceTree = "<group>"; };
+		52B67D7F2A1648470097EADE /* ArticleBookMarkTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleBookMarkTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				529DF46329EEFCA100432881 /* ArticleTabView.swift */,
 				529DF46529EF0CEB00432881 /* EmptyPlaceHolderView.swift */,
 				529DF46729EF0FFE00432881 /* RetryView.swift */,
+				52B67D7F2A1648470097EADE /* ArticleBookMarkTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				529DF45F29ED7F1300432881 /* ArticleViewModel.swift */,
+				52A9E8992A163DA9006C2368 /* ArticleBookMarkViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52847BB829DE073C000867E7 /* ContentView.swift in Sources */,
+				52A9E89A2A163DA9006C2368 /* ArticleBookMarkViewModel.swift in Sources */,
 				529DF45629E1B9DA00432881 /* ArticleListView.swift in Sources */,
 				529DF46629EF0CEB00432881 /* EmptyPlaceHolderView.swift in Sources */,
 				52847BE829DEEC88000867E7 /* ArticleRowView.swift in Sources */,
@@ -340,6 +347,7 @@
 				529DF45D29ED750C00432881 /* Category.swift in Sources */,
 				52847BE329DE1B33000867E7 /* Article.swift in Sources */,
 				529DF45829E1BDA900432881 /* SafariView.swift in Sources */,
+				52B67D802A1648470097EADE /* ArticleBookMarkTabView.swift in Sources */,
 				529DF45B29ED713C00432881 /* NewsApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

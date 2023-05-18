@@ -25,7 +25,6 @@ struct ArticleTabView: View {
     
     @ViewBuilder
     private var overlayView: some View {
-        
             switch articleNewsVM.phase{
                 
             case .empty: ProgressView()
@@ -77,7 +76,9 @@ struct ArticleTabView: View {
 }
 
 struct ArticleTabView_Previews: PreviewProvider {
+    @StateObject static var articlBookmarkViewModel = ArticleBookMarkViewModel()
     static var previews: some View {
         ArticleTabView(articleNewsVM: ArticleNewsViewModel(articles: Article.previewData))
+            .environmentObject(articlBookmarkViewModel)
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Initialization: This help us prepare an instance of a class, structure, enum, all stored property have to initialize before an instance will be create
+// Initialization: This help us prepare an instance of a class, structure, enum, all stored property have to initialize before an instance will be create.
 
 class Book {
     var author: String
